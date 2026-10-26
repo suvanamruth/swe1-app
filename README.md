@@ -2,3 +2,4 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/suvanamruth/swe1-app/badge.svg)](https://coveralls.io/github/suvanamruth/swe1-app)
 
+#django app
