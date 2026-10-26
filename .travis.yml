@@ -17,3 +17,15 @@ script:
 
 after_success:
   - coveralls
+
+deploy:
+  provider: elasticbeanstalk
+  edge: true
+  region: us-east-2
+  app: django-tutorial
+  env: django-env
+  bucket: elasticbeanstalk-us-east-2-373550663668
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  on:
+    branch: main
